@@ -1,0 +1,284 @@
+/* Global Styles */
+
+/* --- Base --- */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Buttons --- */
+.primary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.primary-btn:hover {
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.secondary-btn:hover {
+    background: #667eea;
+    color: white;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #666;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #667eea;
+}
+
+.tab-btn.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+/* --- Badges --- */
+.category-badge,
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.category-badge {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.status-badge.pending {
+    background: #fff4e6;
+    color: #f59e0b;
+    border: 1px solid #ffe0b2;
+}
+
+.status-badge.in-progress {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.status-badge.resolved {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.status-badge.rejected {
+    background: #fee;
+    color: #c33;
+    border: 1px solid #fcc;
+}
+
+/* --- Empty States --- */
+.empty-state {
+    background: white;
+    border-radius: 12px;
+    padding: 64px 32px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.empty-icon {
+    color: #ccc;
+    margin-bottom: 16px;
+}
+
+.empty-state p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.empty-subtitle {
+    font-size: 14px;
+    color: #999;
+}
+
+/* --- Cards --- */
+.card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    border: 1px solid #7c3aed;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* --- Typography --- */
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* --- Forms --- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s;
+    background: white;
+    color: #1f2937;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: white;
+}
+
+.form-control-icon-padding {
+    padding-left: 44px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    /* Center vertically in relative container */
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+    z-index: 1;
+    /* Ensure icon is above input background */
+}
+
+/* Adjust top for label offset if needed, or assume icon is in wrapper */
+.form-group:has(.form-label) .input-icon {
+    top: calc(50% + 14px);
+    /* Rough adjustment if label is ~20px high */
+}
+
+/* Better approach: wrapper for input+icon */
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper .input-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+/* --- Utilities --- */
+.close-btn {
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    /* Some had 50%, some 4px. Standardizing to 50% for circle look or 4px for square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 8px;
+}

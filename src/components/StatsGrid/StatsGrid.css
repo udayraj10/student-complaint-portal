@@ -1,0 +1,69 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+  /* Reduced gap */
+  margin-bottom: 24px;
+  /* Reduced margin */
+}
+
+.stat-card {
+  background: white;
+  border-radius: 8px;
+  /* Reduced radius */
+  padding: 16px;
+  /* Reduced padding */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Lighter shadow */
+  border: 1px solid #eef0f2;
+  /* Lighter border */
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Reduced gap */
+  margin-bottom: 8px;
+  /* Reduced margin */
+}
+
+.stat-icon {
+  color: #667eea;
+}
+
+.stat-icon.pending {
+  color: #f59e0b;
+}
+
+.stat-icon.in-progress {
+  color: #1976d2;
+}
+
+.stat-icon.resolved {
+  color: #2e7d32;
+}
+
+.stat-label {
+  font-size: 13px;
+  /* Slightly smaller */
+  color: #666;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 24px;
+  /* Reduced from 32px */
+  font-weight: 600;
+  /* Slightly lighter weight */
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on mobile */
+    gap: 12px;
+  }
+}

@@ -1,0 +1,89 @@
+.complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.complaint-item {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.complaint-item.clickable {
+  cursor: pointer;
+}
+
+.complaint-item.clickable:hover {
+  transform: translateY(-2px);
+  border: 1px solid #7c3aed;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.complaint-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-transform: capitalize;
+}
+
+.complaint-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.complaint-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.complaint-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #999;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.chevron-icon {
+  color: #ccc;
+  transition: all 0.2s;
+}
+
+.complaint-item.clickable:hover .chevron-icon {
+  color: #667eea;
+  transform: translateX(4px);
+}
+
+
+
+@media (max-width: 768px) {
+  .complaint-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

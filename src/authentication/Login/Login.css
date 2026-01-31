@@ -1,0 +1,226 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  transition: max-width 0.3s ease;
+}
+
+.login-card.register-mode {
+  max-width: 800px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.university-login-logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+.login-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.login-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: all 0.2s;
+  background: #fafafa;
+  color: #333;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px top 50%;
+  background-size: 10px auto;
+}
+
+.login-select:focus {
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.auth-toggle-container {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-toggle-link {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+
+.auth-toggle-link:hover {
+  text-decoration: underline;
+  color: #5a67d8;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-form-group input {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: all 0.2s;
+  background: #fafafa;
+}
+
+.login-form-group input:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.login-form-group input[name="name"] {
+  text-transform: capitalize;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+.login-form-group input::-webkit-outer-spin-button,
+.login-form-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.login-form-group input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-error-message {
+  padding: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.demo-credentials {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #666;
+  border: 1px solid #e0e0e0;
+}
+
+/* Registration Grid Layout */
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.register-form .full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .register-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.demo-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.demo-credentials p {
+  margin: 4px 0;
+}

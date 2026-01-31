@@ -1,0 +1,161 @@
+.complaint-detail {
+    height: 50vh;
+    background: #f5f5f5;
+}
+
+.detail-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.detail-card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid #e0e0e0;
+}
+
+.detail-title-section {
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.detail-title-section h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.detail-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.detail-info {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.detail-description h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.detail-description p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    font-family: "Inter", sans-serif;
+}
+
+.admin-response-section {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.admin-response-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.response-content p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fee;
+    color: #c33;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #fcc;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .detail-content {
+        padding: 12px;
+    }
+
+    .detail-card {
+        padding: 20px;
+    }
+
+    .detail-title-section h1 {
+        font-size: 24px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

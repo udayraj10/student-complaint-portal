@@ -1,0 +1,20 @@
+.admin-registration-form {
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.admin-registration-form h2 {
+  margin-bottom: 24px;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+/* Inputs handled global */
+
+/* Error message handled global */
+
+/* Buttons and actions handled global */
