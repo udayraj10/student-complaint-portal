@@ -11,35 +11,16 @@
     "lucide-react": "^0.294.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "ajv": "6.12.6",
-    "ajv-keywords": "3.5.2"
-  },
-  "overrides": {
-    "ajv": "6.12.6",
-    "ajv-keywords": "3.5.2",
-    "fork-ts-checker-webpack-plugin": {
-      "ajv": "6.12.6",
-      "ajv-keywords": "3.5.2"
-    },
-    "schema-utils": {
-      "ajv": "6.12.6",
-      "ajv-keywords": "3.5.2"
-    }
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
