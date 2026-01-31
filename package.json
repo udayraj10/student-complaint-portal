@@ -4,7 +4,7 @@
   "description": "Student Feedback and Complaint Portal for Sri Venkateshwara University",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "dependencies": {
     "firebase": "^12.8.0",
