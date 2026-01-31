@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Student Feedback and Complaint Portal for Sri Venkateshwara University",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "firebase": "^12.8.0",
     "lucide-react": "^0.294.0",
@@ -11,12 +14,20 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "resolutions": {
-    "fork-ts-checker-webpack-plugin/ajv-keywords": "^3.5.2"
+  "devDependencies": {
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2"
   },
   "overrides": {
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
     "fork-ts-checker-webpack-plugin": {
-      "ajv-keywords": "^3.5.2"
+      "ajv": "6.12.6",
+      "ajv-keywords": "3.5.2"
+    },
+    "schema-utils": {
+      "ajv": "6.12.6",
+      "ajv-keywords": "3.5.2"
     }
   },
   "scripts": {
