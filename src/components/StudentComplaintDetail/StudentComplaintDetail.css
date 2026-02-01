@@ -1,5 +1,5 @@
-.complaint-detail {
-    height: 50vh;
+.student-complaint-detail {
+    min-height: 100vh;
     background: #f5f5f5;
 }
 
@@ -7,7 +7,7 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
 }
 
 .detail-card {
@@ -142,7 +142,7 @@
 
 @media (max-width: 768px) {
     .detail-content {
-        padding: 12px;
+        padding: 0px;
     }
 
     .detail-card {

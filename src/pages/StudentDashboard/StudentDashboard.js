@@ -12,6 +12,7 @@ import { feedbackSystemService } from "../../services/feedbackSystemService"
 import ComplaintModal from "../../components/ComplaintModal/ComplaintModal"
 import Toast from "../../components/Toast/Toast"
 import Loader from "../../components/Loader/Loader"
+import Footer from "../../components/Footer/Footer"
 import "./StudentDashboard.css"
 
 const StudentDashboard = ({ user, onLogout }) => {
@@ -295,6 +296,7 @@ const StudentDashboard = ({ user, onLogout }) => {
           </>
         )}
       </div>
+      <Footer />
     </div>
   )
 }

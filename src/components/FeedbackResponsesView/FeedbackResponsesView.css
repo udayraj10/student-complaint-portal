@@ -271,9 +271,13 @@
 }
 
 @media (max-width: 768px) {
+    .responses-modal-overlay {
+        padding: 20px;
+    }
+
     .responses-modal {
-        max-height: 100vh;
-        border-radius: 0;
+        max-height: 85vh;
+        border-radius: 12px;
     }
 
     .responses-header,

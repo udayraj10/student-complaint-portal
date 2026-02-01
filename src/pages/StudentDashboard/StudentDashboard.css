@@ -1,12 +1,15 @@
 .dashboard {
     min-height: 100vh;
     background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-content {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    padding: 32px 32px 32px 32px;
+    padding: 32px 32px 80px 32px;
 }
 
 .tabs {
@@ -27,15 +30,13 @@
     margin-top: 32px;
 }
 
+.feedbacks-section {
+    margin-top: 0;
+}
+
 .complaints-section h2 {
     font-size: 24px;
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 24px;
-}
-
-@media (max-width: 768px) {
-    .dashboard-content {
-        padding: 20px 20px 20px 20px;
-    }
 }

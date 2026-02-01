@@ -11,6 +11,7 @@ body {
 .primary-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 14px 24px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -33,6 +34,7 @@ body {
 .secondary-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 14px 24px;
     background: white;

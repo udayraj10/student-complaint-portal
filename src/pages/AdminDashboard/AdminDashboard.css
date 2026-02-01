@@ -1,12 +1,15 @@
 .dashboard {
     min-height: 100vh;
     background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-content {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    padding: 32px 32px 32px 32px;
+    padding: 32px 32px 80px 32px;
 }
 
 .tabs {
@@ -84,7 +87,11 @@
 }
 
 .feedbacks-section {
-    margin-top: 32px;
+    margin-top: 0;
+}
+
+.complaints-section {
+    margin-top: 0;
 }
 
 .feedbacks-section h2 {
@@ -94,11 +101,7 @@
     margin-bottom: 24px;
 }
 
-@media (max-width: 768px) {
-    .dashboard-content {
-        padding: 20px 20px 20px 20px;
-    }
-
+@media (max-width: 559px) {
     .filters-section {
         flex-direction: column;
     }

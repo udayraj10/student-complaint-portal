@@ -73,7 +73,7 @@ const StudentComplaintDetail = ({ complaint, onBack }) => {
     const statusInfo = getStatusInfo(complaint.status)
 
     return (
-        <div className="complaint-detail">
+        <div className="student-complaint-detail">
             <div className="detail-content">
                 <div className="detail-card">
                     <div className="detail-title-section">

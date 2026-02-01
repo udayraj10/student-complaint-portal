@@ -20,6 +20,17 @@
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.feedback-rating-modal::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 .rating-modal-header {
@@ -196,6 +207,7 @@
     border-radius: 8px;
     font-size: 14px;
     font-weight: 500;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     transition: all 0.2s;
     border: none;
@@ -227,9 +239,13 @@
 }
 
 @media (max-width: 768px) {
+    .feedback-rating-modal-overlay {
+        padding: 20px;
+    }
+
     .feedback-rating-modal {
-        max-height: 100vh;
-        border-radius: 0;
+        max-height: 85vh;
+        border-radius: 12px;
     }
 
     .rating-modal-header,

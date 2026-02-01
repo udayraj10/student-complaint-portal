@@ -13,6 +13,7 @@ import Toast from "../../components/Toast/Toast"
 import { feedbackService } from "../../services/feedbackService"
 import { feedbackSystemService } from "../../services/feedbackSystemService"
 import Loader from "../../components/Loader/Loader"
+import Footer from "../../components/Footer/Footer"
 import "./AdminDashboard.css"
 
 const AdminDashboard = ({ user, onLogout }) => {
@@ -320,6 +321,7 @@ const AdminDashboard = ({ user, onLogout }) => {
           </>
         )}
       </div>
+      <Footer />
     </div>
   )
 }

@@ -15,7 +15,6 @@ const FeedbackPostForm = ({ adminId, adminName, onSubmitSuccess, onCancel }) => 
         'Hostel Food Quality',
         'Campus Hygiene',
         'Infrastructure',
-        'Facilities & Amenities',
         'Library Services',
         'Transportation',
         'Academic Support',

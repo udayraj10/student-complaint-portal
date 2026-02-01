@@ -137,7 +137,7 @@ const AdminComplaintDetail = ({ complaint, onBack, onStatusUpdate }) => {
     const statusInfo = getStatusInfo(status)
 
     return (
-        <div className="complaint-detail">
+        <div className="admin-complaint-detail">
             <div className="detail-header">
                 <button className="back-button" onClick={onBack}>
                     <ArrowLeft size={20} />
