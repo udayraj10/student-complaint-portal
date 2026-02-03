@@ -13,7 +13,7 @@ A centralized platform for students to submit feedback and complaints with real-
 ## Tech Stack
 - **Frontend:** React.js
 - **Icons:** Lucide React
-- **Storage:** LocalStorage (for demo), ready for database integration
+- **Storage:** Google Firebase
 - **Styling:** CSS3 with custom components
 
 ## Getting Started
